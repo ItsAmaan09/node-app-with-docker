@@ -14,47 +14,47 @@
 # Docker important cmd : run into docker terminal
 ==================================================
 
-1. <docker run -it ubuntu>
-- run image
+<docker run -it ubuntu>
+Run image
 
-2. <docker pull node>
-- this will pull and create a node image
+<docker pull node>
+This will pull and create a node image
 
-3. <docker run -t node>
-- this will run node image
+<docker run -t node>
+This will run node image
 
-4. <docker run -p 9000:9000 app_name>
-- to run a docker image in system. this will run into docker server
+<docker run -p 9000:9000 app_name>
+To run a docker image in system. this will run into docker server
 
-5. <docker container ls>
-- List available container in your system.
+<docker container ls>
+List available container in your system.
 
-6. <docker images>
-- List installed image in your system.
+<docker images>
+List installed image in your system.
 
-7. <docker stop container_id>
-- To stop a Docker container 
+<docker stop container_id>
+To stop a Docker container 
 
-8. <docker container rm container_id>
-- To remove a docker container
+<docker container rm container_id>
+To remove a docker container
 
-9. <docker image rm image_id>
-- To remove image
+<docker image rm image_id>
+To remove image
 
 ========================================================================
 # Push image into docker repo:
 ========================================================================
 
-1. Go to hub.docker.com for creating an account.
+Go to hub.docker.com for creating an account.
 
-2. This will create a docker image which you will push into repo.
-- <docker build -t username/project_name .>
+This will create a docker image which you will push into repo.
+<docker build -t username/project_name .>
 
-3. This will push docker image into docker repository.
-- <docker push username/project_name>
+This will push docker image into docker repository.
+<docker push username/project_name>
 
-4. If you wanna run this app into someone virtual machine.
-- <docker run -it username/project_name >
+If you wanna run this app into someone virtual machine.
+<docker run -it username/project_name >
 
 ==================================================================================
 # After project done it is good practise to remove first container and then images.
